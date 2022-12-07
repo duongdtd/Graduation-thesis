@@ -1,0 +1,62 @@
+
+POST https://backend-production-a2df.up.railway.app/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "jim3ww22",
+  "password": "jim",
+  "device_id": "123123123"
+}
+###
+POST http://localhost:27017/api/auth/register
+
+Content-Type: application/json 
+{
+"username": "dtdasdas99",
+"password": "123asdas",
+}
+###
+GET http://192.168.0.113:5000/api/finger
+
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzNiMTc4ZTYxZGEyZDc3MDEyMDg3NGIiLCJpYXQiOjE2NjQ5NTQ4MjcsImV4cCI6MTY2NTA0MTIyN30.bGLDBlcqWn092FLsDIz0M613ZxO9KKjsQFg_gEBVygI 
+
+###
+DELETE http://localhost:27017/api/finger/633d2ea1ae5d7b223cd3e09d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzNiMTc4ZTYxZGEyZDc3MDEyMDg3NGIiLCJpYXQiOjE2NjQ5NTQ4MjcsImV4cCI6MTY2NTA0MTIyN30.bGLDBlcqWn092FLsDIz0M613ZxO9KKjsQFg_gEBVygI   
+###
+GET http://localhost:27017/api/finger
+
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzNiMTc4ZTYxZGEyZDc3MDEyMDg3NGIiLCJpYXQiOjE2NjQ4Njk3NjEsImV4cCI6MTY2NDk1NjE2MX0.D5caDfKt7ftElSSMjlcO7DmORPfcfz1CtvcXTh8ZHG0  
+{
+  "fingerId": 15,
+  "name": "Duong Dinh Tien",
+}
+###
+POST http://192.168.0.113:5000/api/notification/addnotify
+Content-Type: application/json
+
+{
+  "ID": 131,
+  "Type": "keyboard",
+  "device_id": "123456789"
+}
+###
+GET http://localhost:5000/api/notification
+Content-Type: application/json
+
+{
+  "device_id": "123123123"
+}
+###
+GET http://backend-production-a2df.up.railway.app/open
+
+###
+POST http://192.168.0.113:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "duongcute",
+  "password": "jim"
+}
